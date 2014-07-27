@@ -1,0 +1,11 @@
+<h1>Car Manager App</h1>
+
+<div>
+	<input type="text" ng-model="car.name"></input>
+	<button class="btn btn-small" type="submit" ng-click="addCar()">Add Car</button>
+</div>
+
+List of cars
+<div>
+	<li ng-repeat="car in cars">{{car.name}}</li>
+</div>
