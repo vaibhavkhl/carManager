@@ -1,4 +1,7 @@
 CarManager::Application.routes.draw do
+  match 'cars', to: 'cars#index', via: [:options]
+  resources :cars, except: [:new, :edit]
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
